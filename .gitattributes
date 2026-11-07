@@ -1,0 +1,37 @@
+# =============================================================================
+# SerialCOM — .gitattributes
+# Normalize line endings for cross-platform Git compatibility.
+# =============================================================================
+
+# Auto-detect text files and normalize line endings to LF in the repository.
+* text=auto eol=lf
+
+# C# source files — enforce LF
+*.cs text eol=lf
+*.csproj text eol=lf
+*.sln text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf
+
+# Configuration
+*.json text eol=lf
+.gitignore text eol=lf
+*.config text eol=lf
+
+# Build scripts (Windows batch needs CRLF to execute correctly)
+*.bat text eol=crlf
+
+# Resources
+*.resx text eol=lf
+
+# Binary files — leave untouched
+*.dll -text
+*.exe -text
+*.pdb -text
+*.user -text
+*.suo -text
+*.nuget.props -text
+*.nuget.targets -text
+*.cache -text

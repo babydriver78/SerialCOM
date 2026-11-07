@@ -1,0 +1,47 @@
+# =============================================================================
+# SerialCOM — .gitignore
+# Keeps the GitHub upload clean: source code + docs only.
+# Build outputs and IDE/user-specific files are excluded.
+# =============================================================================
+
+# --- Build outputs (regenerable via dotnet build / build-windows.bat) ---
+bin/
+obj/
+
+# --- Visual Studio / IDE user-specific files ---
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# --- .NET / NuGet ---
+*.nuget.props
+*.nuget.targets
+project.assets.json
+project.nuget.cache
+nuget.config
+
+# --- Runtime / publish ---
+publish/
+*.runtimeconfig.json
+*.deps.json
+*.dll
+*.exe
+*.pdb
+
+# --- SerialCOM runtime artifacts (user data, not source) ---
+logs/
+*.log
+settings.json
+
+# --- OS generated files ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Temporary files ---
+*.tmp
+*.temp
+~$*
